@@ -3,7 +3,7 @@ FROM alpine:latest
 RUN apk add --update \
     python3 \
     py3-pip \
-    libpq
+    libpq \
 
 # RUN apk add --virtual .build-deps gcc python3-dev musl-dev
 
