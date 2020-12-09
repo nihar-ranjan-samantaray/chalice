@@ -16,7 +16,8 @@ services:
       - STAGE=dev
     networks:
       mysql-network:
-        external: true
+        external:
+          name: mysql-network
 
   mysql-host:
     container_name: mysql
@@ -30,8 +31,11 @@ services:
       - MYSQL_DB=chalice
     volumes:
       - mysql_data:/var/lib/mysql
-    mysql-network:
-        external: true
+    networks:
+        mysql-network:
+        external:
+          name: mysql-network
+
  
 
 
