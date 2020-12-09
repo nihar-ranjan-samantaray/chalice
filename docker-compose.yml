@@ -1,6 +1,6 @@
 version: '2'
 volumes:
-  mysql-data:
+  mysql_data: {}
 services:
   chalice-api:
     container_name: chalice_api
@@ -24,7 +24,7 @@ services:
     container_name: mysql
     image: mysql:5.7
     volumes:
-      - mysql-data:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
     restart: always
     
     environment:
