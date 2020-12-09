@@ -1,6 +1,6 @@
 version: '2'
 volumes:
-  mysql_data: {}
+  mysql_data: 
 services:
   chalice-api:
     container_name: chalice_api
