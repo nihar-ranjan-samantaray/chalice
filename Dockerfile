@@ -2,9 +2,9 @@ FROM alpine:latest
 
 RUN apk add --update \
     python3 \
+    python3-dev \
     py3-pip \
-    libpq \
-    mysql-client
+    libpq 
 
 # RUN apk add --virtual .build-deps gcc python3-dev musl-dev
 
