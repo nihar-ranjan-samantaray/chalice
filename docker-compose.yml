@@ -17,9 +17,9 @@ services:
     networks:
       - mysql-network
     depends_on:
-      - mysql-host
+      - mysqlhost
     links:
-      - "mysql-host:mysql-host"
+      - "mysqlhost:mysqlhost"
   mysqlhost:
     container_name: mysql
     image: mysql:5.7
