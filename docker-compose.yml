@@ -16,10 +16,10 @@ services:
       - STAGE=dev
     networks:
       - mysql-network
-    depends_on:
-      - mysql-host
-    links:
-      - "mysql-host:mysql-host"
+    # depends_on:
+    #   - mysql-host
+    # links:
+    #   - "mysql-host:mysql-host"
   mysql-host:
     container_name: mysql
     image: mysql:5.7

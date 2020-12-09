@@ -4,6 +4,7 @@ RUN apk add --update \
     python3 \
     py3-pip \
     libpq \
+    mysql-client
 
 # RUN apk add --virtual .build-deps gcc python3-dev musl-dev
 
