@@ -8,7 +8,7 @@ services:
     ports:
       - 8010:8000
     environment:
-      - DB_HOST=mysql-host
+      - DB_HOST=mysqlhost
       - DB_USER=root
       - DB_PASSWORD=Mysql@123
       - DB_NAME=chalice
@@ -20,7 +20,7 @@ services:
       - mysql-host
     links:
       - "mysql-host:mysql-host"
-  mysql-host:
+  mysqlhost:
     container_name: mysql
     image: mysql:5.7
     volumes:
