@@ -1,5 +1,4 @@
 chalice
-mysqlclient
 mysql-connector-python
 PyMySQL
 peewee
