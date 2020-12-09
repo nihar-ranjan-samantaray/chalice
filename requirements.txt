@@ -1,0 +1,4 @@
+chalice
+mysql-connector
+peewee
+

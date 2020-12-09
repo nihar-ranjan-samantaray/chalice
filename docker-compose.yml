@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  chalice-app:
+    build: .
+    ports:
+      - 8010:8000
+    environment:
+      - DB_HOST=mysql-host
+      - DB_USER=root
+      - DB_PASSWORD=Mysql@123
+      - DB_NAME=chalice
+      - DB_PORT=3306
+  mysql-host:
+    container_name: mysql
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=Mysql@123
+      - MYSQL_DB=chalice
+    volumes:
+      - :/docker-entrypoint-initdb.d/
+ 
+
+
